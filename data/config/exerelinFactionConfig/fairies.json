@@ -1,0 +1,66 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "baseFleetCostMultiplier":1.0,
+
+    "rebelFleetSuffix":"Dissidents",
+
+    "marketSpawnWeight":0.75,
+
+    "morality":"evil",
+
+    "alignments":{
+        "militarist":1,
+        "technocratic":0.5,
+        "diplomatic":-1,
+        "hierarchical":1,
+    },
+    "diplomacyTraits":["paranoid", "monopolist", "temperamental", "devious"],
+
+    "factionIdForHqResponse":"fairies",
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.DiktatNamer",
+    "specialForcesMaxFleets":1,
+
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":0.75,	# not really their kind of thing...? I guess
+
+    "startShipsSolo":[
+        ["fae_terleth_Storm"]
+    ],
+    "startShipsCombatSmall":[
+        ["fae_oryza_Standard", "fae_terleth_Storm", "fae_terleth_Storm"]
+    ],
+    "startShipsTradeSmall":[
+        ["fae_celvas_Standard", "fae_oryza_Standard", "fae_terleth_Storm"]
+
+    ],
+    "startShipsCombatLarge":[
+        ["fae_lupine_Brute", "fae_lupine_Interdictor", "fae_oryza_Standard"],
+        ["fae_lupine_Brute", "fae_lupine_Interdictor", "fae_terleth_Storm"]
+    ],
+    "startShipsTradeLarge":[["fae_celvas_Standard", "fae_celvas_Standard", "fae_dahlia_Standard"]],
+    "startShipsExplorerLarge":[["fae_lupine_Brute", "fae_celvas_Standard", "fae_dahlia_Standard"]],
+    #"startShipsCarrierSmall":[["drover_Strike", "vigilance_Standard", "brawler_Elite"]],
+
+"startSpecialItems":[
+[["midline_package", ""]],
+],
+
+"defenceStations":[
+{"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.5},
+{"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+{"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.5},
+],
+
+"industrySeeds":[
+{"id":"fuelprod", "mult":0.2},
+{"id":"orbitalworks", "mult":0.1},
+],
+
+"bonusSeeds":[
+{"id":"synchrotron", "count":1},
+{"id":"nanoforge_corrupted", "count":1},
+{"id":"aiCore_station", "count":1},
+],
+}

@@ -1,0 +1,335 @@
+{
+    id:"fairies",
+    "color":[180,0,120,255],
+    "baseUIColor":[200,0,125,255],
+    "darkUIColor":[100,0,60,175],
+    "gridUIColor":[200,0,125,75],
+    "brightUIColor":[231,98,206,255],
+
+    "displayName":"Xielian Monarchy",
+    "logo":"graphics/factions/sindrian_diktat.png",
+    "crest":"graphics/factions/crest_sindrian_diktat.png",
+    "displayNameWithArticle":"the Xeilian Monarchy",
+    "shipNamePrefix":"XRS",
+    "shipNameSources":{
+        "DIKTAT":0,
+        "BRITISH_NAVY":0,
+        "ROMAN":4,
+        "GREEK":2,
+        "EGYPTIAN":0,
+        "PERSIAN":0,
+        "SPACE":0,
+        "GENERAL":0,
+    },
+    "names":{
+        "old english":1,
+        "world":1,
+        "future":1,
+        "myth":1,
+    },
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+    "variantOverrides":{
+        "fae_lupine_Brute":10,
+    },
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+			"sunder":0.5,
+			"falcon":0.5,
+			"monitor":0.5,
+        },
+    },
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":[],
+        "hulls":[
+        ],
+    },
+    "knownShips":{
+        "tags":["sindrian_diktat"],
+        "hulls":[
+			"kite_original",
+			"fae_lupine",
+			"fae_oryza",
+			"fae_dahlia",
+			"fae_celvas",
+			"fae_terleth",
+        ],
+    },
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":[],
+        "hulls":[
+			"fae_lupine",
+        ],
+    },
+    "knownFighters":{
+        "tags":["persean"],
+        "fighters":[
+			"thunder_wing",
+			"gladius_wing",
+			"talon_wing",
+			"claw_wing",
+			"fae_virgix_wing",
+			"fae_zergex_wing",
+        ],
+    },
+    "priorityFighters":{
+        "tags":[],
+        "fighters":[
+			"fae_virgix_wing",
+        ],
+    },
+    "knownWeapons":{
+        "tags":["sindrian_diktat"],
+        "weapons":[
+            "lightmg",
+            "lightdualmg",
+            "vulcan",
+            "lightac",
+            "lightdualac",
+            "lightag",
+            "railgun",
+
+            "heavymortar",
+            "chaingun",
+            "heavyac",
+            "flak",
+            "dualflak",
+
+            "hephag",
+            "mark9",
+            "devastator",
+
+            "reaper",
+            "atropos",
+            "atropos_single",
+            "swarmer",
+            "annihilator",
+            "heatseeker",
+            "harpoon",
+            "harpoon_single",
+            "breach",
+            "sabot",
+            "sabot_single",
+
+            "pilum",
+            "breachpod",
+            "harpoonpod",
+            "sabotpod",
+            "phasecl",
+            "typhoon",
+
+            "squall",
+            "locust",
+
+            "taclaser",
+            "pdlaser",
+            "lrpdlaser",
+            "irpulse",
+            "ioncannon",
+            "gravitonbeam",
+            "pulselaser",
+            "phasebeam",
+
+            "hil",
+            "autopulse",
+			"tasuan",
+			"ulupe",
+			"lupe",
+			"lirim",
+			"calath",
+			"calath_dual",
+			"fae_Z_threat",
+			"balphus",
+			"elthaem",
+			"mequas",
+			"fae_zethell",
+			"fae_zethell_F",
+        ],
+    },
+    "priorityWeapons":{
+        "tags":[],
+        "weapons":[
+        ],
+    },
+    "knownHullMods":{
+        "tags":["standard", "persean"],
+        "hullMods":[
+        ],
+    },
+    "weaponSellFrequency":{
+        "lightag":5,
+        "railgun":5,
+
+        "heavyac":5,
+        "heavymortar":5,
+        "flak":5,
+        "dualflak":5,
+
+        "reaper":5,
+        #"phasecl":5,
+        "breachpod":5,
+        "harpoonpod":5,
+        "sabotpod":5,
+        "squall":5,
+        "locust":5,
+
+
+        "pdlaser":5,
+        "lrpdlaser":5,
+        "taclaser":5,
+        "gravitonbeam":5,
+        "pulselaser":3,
+        "phasebeam":2,
+        "hil":10,
+        "autopulse":5,
+		"tasuan":10,
+		"ulupe":10,
+		"lupe":10,
+		"lirim":5,
+		"calath":5,
+    },
+    "fighterSellFrequency":{
+    },
+    "hullmodSellFrequency":{
+        "solar_shielding":10,
+		"hardenedhardenedshieldemitter":5,
+		"stabilizedshieldemitter":5,
+    },
+    "factionDoctrine":{
+        "warships":5,
+        "carriers":1,
+        "phaseShips":0,
+
+        "officerQuality":2,
+        "shipQuality":3,
+        "numShips":2,
+
+        "shipSize":3,
+
+        "aggression":4,
+
+        "combatFreighterProbability":0.5,      				# instead of some portion of the freighters in a fleet
+        "combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+        "combatFreighterCombatUseFractionWhenPriority":1,   # as part of normal combat lineup, when marked as priority ship
+        "autofitRandomizeProbability":0,					# there is no room for chance in the Queen's Grand Plan
+
+		"officerSkillsShuffleProbability":1f,
+        "officerSkills":[
+            "ballistic_mastery",
+            "energy_weapon_mastery",
+            "ordnance_expert",
+        ],
+        "commanderSkillsShuffleProbability":1,
+        "commanderSkills":[
+            "coordinated_maneuvers",
+            "crew_training",
+			"officer_training",
+			"electronic_warfare",
+        ],
+    },
+    "illegalCommodities":[
+        "drugs",
+        "organs",
+        "hand_weapons",
+    ],
+    "music":{
+        "theme":"music_diktat_market_neutral",
+        "market_neutral":"music_diktat_market_neutral",
+        "market_hostile":"music_diktat_market_hostile",
+        "market_friendly":"music_diktat_market_friendly",
+        "encounter_neutral":"music_diktat_encounter_neutral",
+        "encounter_hostile":"music_diktat_encounter_hostile",
+        "encounter_friendly":"music_diktat_encounter_friendly",
+    },
+    "internalComms":"sindrian_diktat_internal",
+    "portraits":{
+        "standard_male":[
+            "graphics/portraits/portrait_diktat01.png",
+            "graphics/portraits/portrait_diktat03.png",
+            "graphics/portraits/portrait_diktat04.png",
+            "graphics/portraits/portrait_diktat07.png",
+            "graphics/portraits/portrait_diktat10.png",
+            "graphics/portraits/portrait_diktat12.png",
+            "graphics/portraits/portrait_diktat14.png",
+            "graphics/portraits/portrait_diktat16.png",
+
+        ],
+        "standard_female":[
+            "graphics/portraits/portrait_diktat02.png",
+            "graphics/portraits/portrait_diktat05.png",
+            "graphics/portraits/portrait_diktat06.png",
+            "graphics/portraits/portrait_diktat08.png",
+            "graphics/portraits/portrait_diktat09.png",
+            "graphics/portraits/portrait_diktat11.png",
+            "graphics/portraits/portrait_diktat13.png",
+            "graphics/portraits/portrait_diktat15.png",
+
+        ],
+    },
+    "voices":{
+        "LOW":{
+            "soldier":10,
+            "official":5,
+            "spacer":5,
+        },
+        "MEDIUM":{
+            "soldier":10,
+            "official":10,
+        },
+        "HIGH":{
+            "soldier":5,
+            "official":10,
+        },
+    },
+    "custom":{
+        "offersCommissions":true,
+        "engagesInHostilities":true,
+		"engageWhenEvenStrength":true,
+        "buysAICores":true,
+        "AICoreValueMult":1,
+        "AICoreRepMult":2,
+        "buysSurveyData":true,
+        "hostilityImpactOnGrowth":true,
+        #"makesPirateBases":true, # testing
+        "punitiveExpeditionData":{
+            "vsCompetitors":false,
+            "vsFreePort":false,
+            "canBombard":true,
+            "territorial":true,
+        },
+    },
+    "ranks":{
+        "ranks":{
+            "factionLeader":{"name":"Queen"},
+			"spaceAdmiral":{"name":"High Admiral"},
+			"spaceCommander":{"name":"General"},
+        },
+        "posts":{
+            "factionLeader":{"name":"Queen"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
+        },
+    },
+    "fleetTypeNames":{
+        "trade":"Mercantile Convoy",
+        "tradeLiner":"Liner Convoy",
+		"tradeSmuggler":"Smuggler",
+        "smallTrader":"Trader",
+
+        "patrolSmall":"Fast Picket",
+        "patrolMedium":"Patrol",
+        "patrolLarge":"Detachment",
+
+        "inspectionFleet":"Internal Security Fleet",
+        "taskForce":"Task Force",
+
+        "foodReliefFleet":"Relief Convoy",
+    },
+},
+
+

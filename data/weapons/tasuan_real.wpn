@@ -1,0 +1,63 @@
+{
+  "id": "tasuan_real",
+  "specClass": "projectile",
+  "projectileSpecId": "tasuan_shot_F",
+  "type": "ENERGY",
+  "mountTypeOverride":"HYBRID",
+  "size": "LARGE",
+  "displayArcRadius": 450,
+  "turretSprite": "graphics/weapons/tasun_base.png",
+  "turretGunSprite": "graphics/weapons/tasuan_barrel.png",
+  "turretGlowSprite": "graphics/weapons/tasuan_glow.png",
+  "hardpointSprite": "graphics/weapons/tasun_base.png",
+  "hardpointGunSprite": "graphics/weapons/tasuan_barrel.png",
+  "hardpointGlowSprite": "graphics/weapons/tasuan_glow.png",
+   "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "visualRecoil": 15,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    40.5,
+    -7,
+    40.5,
+    7
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    61.5,
+    -7,
+    61.5,
+    7
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 5,
+    "particleSizeMin": 18,
+    "particleSizeRange": 24,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      190,
+      150,
+      220,
+      185
+    ]
+  },
+  "fireSoundOne": "fae_tasuan_chargeup",
+  "fireSoundTwo": "fae_tasuan",
+}
